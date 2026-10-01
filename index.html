@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sattva — студия йоги</title>
+  <meta name="description" content="Студия йоги для тех, кто хочет замедлиться: малые группы, внимательные преподаватели, мягкие практики.">
+  <meta name="theme-color" content="#fbf7f3">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant+Unicase:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.200 7-11.500A7 7 0 005 9.500C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".9" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M21 4L3 11l5.500 2L10 19l3-3.500L18 19z"/><path d="M8.500 13L21 4"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.500 20.500l1.200-4.200A8.500 8.500 0 1112 20.500a8.500 8.500 0 01-4-1z"/><path d="M9 8.500c0 3.500 2.500 6.500 6.500 6.500l1-1.500-2-1-1 .8a4 4 0 01-2-2l.8-1-1-2z"/></symbol>
+  </svg>
+
+  <!-- ===== ШАПКА ===== -->
+  <header class="top" id="top">
+    <div class="wrap top__bar">
+      <nav class="top__nav" id="menu" aria-label="Menu">
+        <div class="lang lang--menu" role="group" aria-label="Language">
+          <button type="button" data-lang="ru" class="is-active">RU</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="kk">ҚАЗ</button>
+        </div>
+        <ul>
+          <li><a href="#about" data-t="n.about">О студии</a></li>
+          <li><a href="#schedule" data-t="n.schedule">Расписание</a></li>
+          <li><a href="#pricing" data-t="n.pricing">Тарифы</a></li>
+          <li><a href="#faq" data-t="n.faq">Вопросы</a></li>
+          <li><a href="#contacts" data-t="n.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand" href="#hero" aria-label="Sattva"><svg class="brand__mark" viewBox="0 0 40 30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 3C16.500 9 16.500 17 20 24C23.500 17 23.500 9 20 3Z"/><path d="M20 24C14 22.500 10 17 11 9C15.500 11 19 17 20 24Z"/><path d="M20 24C26 22.500 30 17 29 9C24.500 11 21 17 20 24Z"/><path d="M5 18C6 23 12 27 20 27C28 27 34 23 35 18"/></svg><span class="brand__name">Sattva</span></a>
+
+      <div class="top__tools">
+        <div class="lang lang--top" role="group" aria-label="Language">
+          <button type="button" data-lang="ru" class="is-active">RU</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="kk">ҚАЗ</button>
+        </div>
+        <a class="btn btn--ghost btn--sm top__cta" href="#contacts" data-t="cta.short">Записаться</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="petals" id="petals" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-split data-t="hero.title">Пространство, где можно выдохнуть</h1>
+          <p class="hero__text" data-t="hero.text">Студия йоги для тех, кто хочет замедлиться: малые группы, внимательные преподаватели и мягкие практики.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#contacts" data-t="cta.trial">Записаться на пробное</a>
+            <a class="btn btn--ghost" href="#schedule" data-t="hero.more">Расписание занятий</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="halo" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="hero__arch">
+            <div class="arch ph" data-ph="images/hero.jpg"><img src="images/hero.jpg" alt="" fetchpriority="high"></div>
+          </div>
+          <div class="breath" aria-hidden="true">
+            <span class="breath__dot"></span>
+            <span class="breath__label"><span class="in" data-t="breath.in">Вдох</span><span class="out" data-t="breath.out">Выдох</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== О СТУДИИ ===== -->
+    <section class="sec" id="about">
+      <div class="wrap about">
+        <div class="about__photos">
+          <div class="about__tall arch ph" data-reveal="clip" data-ph="images/about-1.jpg"><img src="images/about-1.jpg" alt="" loading="lazy"></div>
+          <div class="about__round ph" data-reveal="clip" data-ph="images/about-2.jpg"><img src="images/about-2.jpg" alt="" loading="lazy"></div>
+        </div>
+
+        <div class="about__body">
+          <h2 class="h2" data-split data-t="ab.title">О студии</h2>
+          <p class="lead" data-reveal data-t="ab.lead">Мы открыли Sattva, чтобы в городе появилось тихое место для практики без спешки и сравнений.</p>
+          <p class="about__text" data-reveal data-t="ab.text">Здесь не нужно уметь садиться на шпагат. Мы учим слушать тело, дышать ровно и двигаться в своём темпе. В зале светло, тепло и пахнет травяным чаем.</p>
+          <ul class="principles">
+            <li data-reveal><h3 data-t="p1.t">Малые группы</h3><p data-t="p1.d">До 10 человек в зале, чтобы преподаватель видел каждого.</p></li>
+            <li data-reveal><h3 data-t="p2.t">Любой уровень</h3><p data-t="p2.d">К каждой асане есть мягкий вариант и усложнение.</p></li>
+            <li data-reveal><h3 data-t="p3.t">Чай после практики</h3><p data-t="p3.d">Посидеть, согреться и не торопиться домой.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Лотос: линии «рисуются» при прокрутке -->
+    <div class="intermission" aria-hidden="true">
+      <svg class="lotus lotus--big" viewBox="0 0 400 262" fill="none" aria-hidden="true"><path class="lp lp--rose" pathLength="1" style="--i:0" d="M200 36C168 88 168 152 200 204C232 152 232 88 200 36Z"/><path class="lp" pathLength="1" style="--i:1" d="M200 204C150 192 108 142 118 72C160 92 190 142 200 204Z"/><path class="lp" pathLength="1" style="--i:2" d="M200 204C250 192 292 142 282 72C240 92 210 142 200 204Z"/><path class="lp lp--rose" pathLength="1" style="--i:3" d="M200 208C130 214 70 172 48 110C100 110 160 142 200 208Z"/><path class="lp lp--rose" pathLength="1" style="--i:4" d="M200 208C270 214 330 172 352 110C300 110 240 142 200 208Z"/><path class="lp" pathLength="1" style="--i:5" d="M200 214C140 236 70 226 18 184C80 172 150 182 200 214Z"/><path class="lp" pathLength="1" style="--i:6" d="M200 214C260 236 330 226 382 184C320 172 250 182 200 214Z"/><path class="lp lp--base" pathLength="1" style="--i:7" d="M70 238H330"/><path class="lp lp--base" pathLength="1" style="--i:8" d="M120 252H280"/></svg>
+    </div>
+
+    <!-- ===== ЦИТАТА С ПАРАЛЛАКСОМ ===== -->
+    <section class="quote" aria-label="Quote">
+      <div class="quote__bg ph" data-ph="images/quote.jpg"><img src="images/quote.jpg" alt="" loading="lazy" data-parallax></div>
+      <div class="wrap"><blockquote class="quote__text" data-split data-t="q.text">Йога — не про гибкость тела, а про гибкость внимания.</blockquote></div>
+    </section>
+
+    <!-- ===== РАСПИСАНИЕ ===== -->
+    <section class="sec sec--mist sec--wave" id="schedule">
+      <div class="wrap">
+        <header class="sec__head">
+          <h2 class="h2" data-split data-t="sc.title">Расписание</h2>
+          <p class="sec__sub" data-reveal data-t="sc.sub">Занятия идут всю неделю. Первое посещение — по записи.</p>
+        </header>
+
+        <div class="chips" role="group" aria-label="Days" data-reveal><button type="button" class="chip is-active" data-day="all" aria-pressed="true" data-t="f.all">Все дни</button><button type="button" class="chip" data-day="mon" aria-pressed="false" data-t="ds.mon">Пн</button><button type="button" class="chip" data-day="tue" aria-pressed="false" data-t="ds.tue">Вт</button><button type="button" class="chip" data-day="wed" aria-pressed="false" data-t="ds.wed">Ср</button><button type="button" class="chip" data-day="thu" aria-pressed="false" data-t="ds.thu">Чт</button><button type="button" class="chip" data-day="fri" aria-pressed="false" data-t="ds.fri">Пт</button><button type="button" class="chip" data-day="sat" aria-pressed="false" data-t="ds.sat">Сб</button><button type="button" class="chip" data-day="sun" aria-pressed="false" data-t="ds.sun">Вс</button></div>
+
+        <div class="sched" data-reveal>
+          <table class="sched__table">
+            <thead>
+              <tr>
+                <th data-t="th.day">День</th><th data-t="th.time">Время</th><th data-t="th.class">Занятие</th>
+                <th data-t="th.teacher">Преподаватель</th><th data-t="th.level">Уровень</th><th data-t="th.dur">Длительность</th><th><span class="sr">Book</span></th>
+              </tr>
+            </thead>
+            <tbody id="sched-body">
+          <tr data-day="mon">
+            <td class="c-day" data-lt="th.day"><span data-t="d.mon">Понедельник</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">08:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.hatha">Хатха-йога</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.aigerim">Айгерим</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="mon">
+            <td class="c-day" data-lt="th.day"><span data-t="d.mon">Понедельник</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">19:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.vinyasa">Виньяса-флоу</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.marina">Марина</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.mid">Средний</span></td>
+            <td class="c-dur" data-lt="th.dur">75 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="tue">
+            <td class="c-day" data-lt="th.day"><span data-t="d.tue">Вторник</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">10:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.back">Йога для спины</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.dana">Дана</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.beg">Для начинающих</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="tue">
+            <td class="c-day" data-lt="th.day"><span data-t="d.tue">Вторник</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">20:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.yin">Инь-йога</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.aigerim">Айгерим</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">75 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="wed">
+            <td class="c-day" data-lt="th.day"><span data-t="d.wed">Среда</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">08:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.vinyasa">Виньяса-флоу</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.marina">Марина</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="wed">
+            <td class="c-day" data-lt="th.day"><span data-t="d.wed">Среда</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">19:30</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.breath">Дыхание и медитация</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.ilyas">Ильяс</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">45 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="thu">
+            <td class="c-day" data-lt="th.day"><span data-t="d.thu">Четверг</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">10:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.prenatal">Йога для беременных</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.dana">Дана</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.beg">Для начинающих</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="thu">
+            <td class="c-day" data-lt="th.day"><span data-t="d.thu">Четверг</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">19:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.hatha">Хатха-йога</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.ilyas">Ильяс</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.beg">Для начинающих</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="fri">
+            <td class="c-day" data-lt="th.day"><span data-t="d.fri">Пятница</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">08:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.yin">Инь-йога</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.aigerim">Айгерим</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="fri">
+            <td class="c-day" data-lt="th.day"><span data-t="d.fri">Пятница</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">18:30</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.vinyasa">Виньяса-флоу</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.marina">Марина</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.mid">Средний</span></td>
+            <td class="c-dur" data-lt="th.dur">75 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="sat">
+            <td class="c-day" data-lt="th.day"><span data-t="d.sat">Суббота</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">10:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.hatha">Хатха-йога</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.aigerim">Айгерим</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">75 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+          <tr data-day="sun">
+            <td class="c-day" data-lt="th.day"><span data-t="d.sun">Воскресенье</span><span class="today" data-t="sc.today">Сегодня</span></td>
+            <td class="c-time" data-lt="th.time">11:00</td>
+            <td class="c-class" data-lt="th.class"><span data-t="c.breath">Дыхание и медитация</span></td>
+            <td class="c-teacher" data-lt="th.teacher"><span data-t="t.ilyas">Ильяс</span></td>
+            <td class="c-level" data-lt="th.level"><span data-t="l.all">Все уровни</span></td>
+            <td class="c-dur" data-lt="th.dur">60 <span data-t="unit.min">мин</span></td>
+            <td class="c-act"><a class="link" href="#contacts" data-t="cta.short">Записаться</a></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ТАРИФЫ ===== -->
+    <section class="sec sec--blush sec--wave" id="pricing">
+      <div class="wrap">
+        <header class="sec__head">
+          <h2 class="h2" data-split data-t="pr.title">Тарифы</h2>
+          <p class="sec__sub" data-reveal data-t="pr.sub">Без скрытых условий. Коврики и пледы — за наш счёт.</p>
+        </header>
+
+        <div class="plans">
+          <div class="plan-wrap" data-reveal>
+            <article class="plan">
+              <h3 class="plan__name" data-t="pl1.name">Пробное</h3>
+              <p class="plan__desc" data-t="pl1.desc">Познакомьтесь со студией и выберите свой формат.</p>
+              <p class="plan__price"><b>2 500 ₸</b><span data-t="pl1.per">за занятие</span></p>
+              <ul class="plan__list"><li><span data-t="pl1.f1">1 занятие на выбор</span></li><li><span data-t="pl1.f2">Коврик и плед</span></li><li><span data-t="pl1.f3">Чай после практики</span></li></ul>
+              <a class="btn btn--ghost" href="#contacts" data-t="cta.short">Записаться</a>
+            </article>
+          </div>
+
+          <div class="plan-wrap plan-wrap--main" data-reveal style="--d:.12s">
+            <article class="plan plan--main">
+              <span class="plan__badge" data-t="pl2.badge">Выбор студии</span>
+              <h3 class="plan__name" data-t="pl2.name">Абонемент</h3>
+              <p class="plan__desc" data-t="pl2.desc">Для тех, кто занимается регулярно, но не каждый день.</p>
+              <p class="plan__price"><b>18 000 ₸</b><span data-t="pl2.per">8 занятий</span></p>
+              <ul class="plan__list"><li><span data-t="pl2.f1">8 занятий на 2 месяца</span></li><li><span data-t="pl2.f2">Заморозка на 14 дней</span></li><li><span data-t="pl2.f3">Запись на любые группы</span></li><li><span data-t="pl2.f4">Один гостевой визит в подарок</span></li></ul>
+              <a class="btn btn--solid" href="#contacts" data-t="cta.short">Записаться</a>
+            </article>
+          </div>
+
+          <div class="plan-wrap" data-reveal style="--d:.24s">
+            <article class="plan">
+              <h3 class="plan__name" data-t="pl3.name">Безлимит</h3>
+              <p class="plan__desc" data-t="pl3.desc">Когда практика становится частью жизни.</p>
+              <p class="plan__price"><b>30 000 ₸</b><span data-t="pl3.per">в месяц</span></p>
+              <ul class="plan__list"><li><span data-t="pl3.f1">Любое число занятий</span></li><li><span data-t="pl3.f2">Приоритетная запись</span></li><li><span data-t="pl3.f3">Скидка 10% на ретриты</span></li></ul>
+              <a class="btn btn--ghost" href="#contacts" data-t="cta.short">Записаться</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="sec" id="faq">
+      <div class="wrap faq">
+        <header class="faq__head">
+          <h2 class="h2" data-split data-t="fq.title">Вопросы и ответы</h2>
+        </header>
+        <div class="faq__list">
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b1" aria-expanded="false" aria-controls="fq-p1"><span data-t="fq1.q">Я новичок. Мне подойдёт?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p1" role="region" aria-labelledby="fq-b1"><div><p data-t="fq1.a">Да. Выберите занятия с пометкой «Для начинающих» — преподаватель покажет каждое движение и подскажет, как его упростить.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b2" aria-expanded="false" aria-controls="fq-p2"><span data-t="fq2.q">Что взять с собой?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p2" role="region" aria-labelledby="fq-b2"><div><p data-t="fq2.a">Удобную одежду и воду. Коврики, блоки, пледы и чай есть в студии.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b3" aria-expanded="false" aria-controls="fq-p3"><span data-t="fq3.q">Можно ли заниматься с травмами или беременностью?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p3" role="region" aria-labelledby="fq-b3"><div><p data-t="fq3.a">Да, но сначала напишите нам: подберём группу или индивидуальное занятие. При острых состояниях лучше сначала проконсультироваться с врачом.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b4" aria-expanded="false" aria-controls="fq-p4"><span data-t="fq4.q">Как отменить или перенести запись?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p4" role="region" aria-labelledby="fq-b4"><div><p data-t="fq4.a">Напишите или позвоните не позднее чем за 4 часа до начала — занятие сохранится в абонементе.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b5" aria-expanded="false" aria-controls="fq-p5"><span data-t="fq5.q">Есть ли душ и раздевалка?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p5" role="region" aria-labelledby="fq-b5"><div><p data-t="fq5.a">Да: тёплый душ, шкафчики и фен. Полотенца можно взять у администратора.</p></div></div>
+          </div>
+          <div class="faq__item" data-reveal>
+            <h3 class="faq__h"><button class="faq__q" type="button" id="fq-b6" aria-expanded="false" aria-controls="fq-p6"><span data-t="fq6.q">Сколько человек в группе?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__a" id="fq-p6" role="region" aria-labelledby="fq-b6"><div><p data-t="fq6.a">От 4 до 10. Если группа меньше, занятие всё равно проходит.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="sec sec--mist sec--wave" id="contacts">
+      <div class="wrap contacts">
+        <div class="contacts__info">
+          <h2 class="h2" data-split data-t="ct.title">Приходите познакомиться</h2>
+          <p class="sec__sub" data-reveal data-t="ct.text">Напишите или позвоните — подберём первое занятие и ответим на вопросы.</p>
+
+          <ul class="facts" data-reveal>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><span class="facts__l" data-t="ct.addr.l">Адрес</span><strong data-t="ct.addr.v">г. Алматы, ул. Тихая, 7</strong></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><span class="facts__l" data-t="ct.phone.l">Телефон</span><a href="tel:+77000000000"><strong>+7 (700) 000-00-00</strong></a></div></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><div><span class="facts__l" data-t="ct.hours.l">Часы работы</span><strong data-t="ct.hours.v">Пн–Пт 07:30–21:30, Сб–Вс 09:00–18:00</strong></div></li>
+          </ul>
+
+          <div class="contacts__btns" data-reveal>
+            <a class="btn btn--solid" href="tel:+77000000000"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-t="ct.call">Позвонить</span></a>
+            <a class="btn btn--ghost" href="https://wa.me/77000000000" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+            <a class="btn btn--ghost" href="https://t.me/username" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg>Telegram</a>
+          </div>
+        </div>
+
+        <div class="contacts__map" data-reveal="clip">
+          <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Almaty%2C%20Kazakhstan&z=13&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== ПОДВАЛ ===== -->
+  <footer class="foot">
+    <svg class="lotus lotus--foot" viewBox="0 0 400 262" fill="none" aria-hidden="true"><path class="lp lp--rose" pathLength="1" style="--i:0" d="M200 36C168 88 168 152 200 204C232 152 232 88 200 36Z"/><path class="lp" pathLength="1" style="--i:1" d="M200 204C150 192 108 142 118 72C160 92 190 142 200 204Z"/><path class="lp" pathLength="1" style="--i:2" d="M200 204C250 192 292 142 282 72C240 92 210 142 200 204Z"/><path class="lp lp--rose" pathLength="1" style="--i:3" d="M200 208C130 214 70 172 48 110C100 110 160 142 200 208Z"/><path class="lp lp--rose" pathLength="1" style="--i:4" d="M200 208C270 214 330 172 352 110C300 110 240 142 200 208Z"/><path class="lp" pathLength="1" style="--i:5" d="M200 214C140 236 70 226 18 184C80 172 150 182 200 214Z"/><path class="lp" pathLength="1" style="--i:6" d="M200 214C260 236 330 226 382 184C320 172 250 182 200 214Z"/><path class="lp lp--base" pathLength="1" style="--i:7" d="M70 238H330"/><path class="lp lp--base" pathLength="1" style="--i:8" d="M120 252H280"/></svg>
+    <p class="foot__namaste" data-t="ft.namaste">Намасте</p>
+    <div class="wrap foot__row">
+      <a class="brand" href="#hero" aria-label="Sattva"><svg class="brand__mark" viewBox="0 0 40 30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 3C16.500 9 16.500 17 20 24C23.500 17 23.500 9 20 3Z"/><path d="M20 24C14 22.500 10 17 11 9C15.500 11 19 17 20 24Z"/><path d="M20 24C26 22.500 30 17 29 9C24.500 11 21 17 20 24Z"/><path d="M5 18C6 23 12 27 20 27C28 27 34 23 35 18"/></svg><span class="brand__name">Sattva</span></a>
+      <p class="foot__copy">© <span id="year">2026</span> Sattva. <span data-t="ft.rights">Все права защищены.</span></p>
+      <div class="foot__social">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="https://t.me/username" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon"><use href="#i-telegram"/></svg></a>
+        <a href="https://wa.me/77000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
